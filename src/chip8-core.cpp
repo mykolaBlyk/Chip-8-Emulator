@@ -411,25 +411,6 @@ void ChipCore::doFx85(){
 		V[i] = hp48_flags[i];
 }
 
-void ChipCore::do00FB(){
-
-}
-
-void ChipCore::do00FC(){
-
-}
-
-void ChipCore::do00FD(){
-
-}
-
-void ChipCore::do00FE(){
-
-}
-
-void ChipCore::do00FF(){
-
-}
 
 void ChipCore::executeNextOpcode()
 {
@@ -615,6 +596,7 @@ void ChipCore::executeNextOpcode()
                         cerr << "Unknown opcode: 0x" << hex << opcode <<endl;
         }
 }
+
 
 bool ChipCore::loadGame(const char *filename)
 {
